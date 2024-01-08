@@ -1,10 +1,10 @@
-var assert = require('assert')
+const assert = require('assert');
 
 describe('grunt-webdriverjs test', function () {
     it('should have right options', function () {
         assert.strictEqual(browser.options.waitforTimeout, 12345)
         assert.strictEqual(browser.options.coloredLogs, true)
-        assert.strictEqual(browser.options.logLevel, 'command')
+        assert.strictEqual(browser.options.logLevel, 'trace')
         assert.strictEqual(browser.options.foo, 'bar')
     })
 

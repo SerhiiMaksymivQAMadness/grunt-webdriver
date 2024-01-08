@@ -23,8 +23,8 @@ module.exports = function (grunt) {
             }
         },
         eslint: {
-            options: {
-                parser: 'babel-eslint'
+            parserOptions: {
+                parser: 'babel-eslint',
             },
             target: ['./src/*.js']
         },
